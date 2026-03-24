@@ -1,0 +1,17 @@
+name: CI simple
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v3
+
+      - name: Vérifier l'emplacement
+        run: |
+          echo "Mon pipeline marche"
+          pwd  # Affiche le dossier actuel
+          ls -la # Liste tous les fichiers (pour voir vos fichiers PHP)
