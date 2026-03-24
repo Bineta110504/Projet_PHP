@@ -10,5 +10,8 @@ jobs:
       - name: Récupérer le code
         uses: actions/checkout@v3
 
-      - name: Afficher message
-        run: echo "Mon pipeline marche "
+      - name: Vérifier l'emplacement
+        run: |
+          echo "Mon pipeline marche"
+          pwd  # Affiche le dossier actuel
+          ls -la # Liste tous les fichiers (pour voir vos fichiers PHP)
