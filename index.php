@@ -1,6 +1,6 @@
 <?php
 function main() {
-    echo "Hello, GitHub!";
+    echo "Hello, PREPROD";
 }
 main();
 ?>
