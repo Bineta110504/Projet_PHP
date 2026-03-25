@@ -24,14 +24,14 @@ services:
     ports:
       - "3306:3306"
 
-  nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile-nginx
-    container_name: nginx_proxy
-    ports:
-      - "80:80"
-    volumes:
-      - .:/var/www/html
-    depends_on:
-      - web
+  # nginx:
+  #   build:
+  #     context: ./nginx
+  #     dockerfile: Dockerfile-nginx
+  #   container_name: nginx_proxy
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - .:/var/www/html
+  #   depends_on:
+  #     - web
